@@ -17,5 +17,10 @@ public class LinkedListMain {
 
         linkedList.insertElement(3,7);
         linkedList.printList();
+
+        linkedList.deleteFirst();
+        linkedList.printList();
+        linkedList.deleteLast();
+        linkedList.printList();
     }
 }

@@ -7,9 +7,20 @@ public class LinkedListFunction<E> {
         Node node = new Node<>(key);
         if (head == null){
             head = node;
+            tail = node;
         }else {
             node.next = head;
             head = node;
+        }
+    }
+    public void appending(E key){
+        Node node = new Node<>(key);
+        if (head == null){
+            head = node;
+            tail = node;
+        }else {
+            tail.next = node;
+            tail = node;
         }
     }
     public void printList(){
@@ -24,4 +35,3 @@ public class LinkedListFunction<E> {
         System.out.println("null");
     }
 }
-

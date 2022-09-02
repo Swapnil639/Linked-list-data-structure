@@ -8,5 +8,10 @@ public class LinkedListMain {
         linkedList.addElement(30);
         linkedList.addElement(56);
         linkedList.printList();
+
+        linkedList.appending(70);
+        linkedList.appending(30);
+        linkedList.appending(56);
+        linkedList.printList();
     }
 }

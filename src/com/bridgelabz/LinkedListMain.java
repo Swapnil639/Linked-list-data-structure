@@ -9,9 +9,13 @@ public class LinkedListMain {
         linkedList.addElement(56);
         linkedList.printList();
 
-        linkedList.appending(70);
-        linkedList.appending(30);
-        linkedList.appending(56);
+        LinkedListFunction linkedList1 = new LinkedListFunction();
+        linkedList1.appending(70);
+        linkedList1.appending(30);
+        linkedList1.appending(56);
+        linkedList1.printList();
+
+        linkedList.insertElement(3,7);
         linkedList.printList();
     }
 }

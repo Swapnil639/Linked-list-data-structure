@@ -23,6 +23,7 @@ public class LinkedListFunction<E> {
             tail = node;
         }
     }
+
     public void printList(){
         Node currentNode = head;
         if (head == null){
@@ -33,5 +34,15 @@ public class LinkedListFunction<E> {
             currentNode = currentNode.next;
         }
         System.out.println("null");
+    }
+
+    public void insertElement(int position, E key) {
+        Node currentNode = head;
+        for (int i = 0; i < (position-1); i++) {
+            currentNode = currentNode.next;
+        }
+        Node node = new Node<>(key);
+        node.next = currentNode.next;
+        currentNode.next = node;
     }
 }

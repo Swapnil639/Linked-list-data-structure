@@ -22,5 +22,11 @@ public class LinkedListMain {
         linkedList.printList();
         linkedList.deleteLast();
         linkedList.printList();
+
+        if ( linkedList.search(30) == null){
+            System.out.println("key is absent");
+        }else {
+            System.out.println("key is present");
+        }
     }
 }

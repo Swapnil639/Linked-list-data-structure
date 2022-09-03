@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c7eb306-2894-42fa-8127-88574b5403c4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/LinkedListFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/LinkedListFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/LinkedListMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/LinkedListMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

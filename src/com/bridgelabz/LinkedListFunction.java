@@ -67,4 +67,14 @@ public class LinkedListFunction<E> {
             tail = currentNode;
         }
     }
+    public Node<E> search(E key){
+        Node<E> currentNode = head;
+        while (currentNode != null){
+            if (currentNode.key.equals(key)){
+                return currentNode;
+            }
+            currentNode = currentNode.next;
+        }
+        return null;
+    }
 }

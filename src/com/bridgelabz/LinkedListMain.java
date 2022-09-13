@@ -28,5 +28,7 @@ public class LinkedListMain {
         }
         linkedList1.insertElementAfterAnyKey(56, 89);
         linkedList1.showLinkedList();
-     }
-   }
+        linkedList1.searchElementThenDelete(89);
+        linkedList1.showLinkedList();
+    }
+}

@@ -24,7 +24,7 @@ public class LinkedListFunction<E> {
         }
     }
 
-    public void printList(){
+    public void showLinkedList(){
         Node currentNode = head;
         if (head == null){
             System.out.println("Linked List is Empty");
@@ -36,7 +36,7 @@ public class LinkedListFunction<E> {
         System.out.println("null");
     }
 
-    public void insertElement(int position, E key) {
+    public void insertElementAtPosition(int position, E key) {
         Node currentNode = head;
         for (int i = 0; i < (position-1); i++) {
             currentNode = currentNode.next;
@@ -45,14 +45,14 @@ public class LinkedListFunction<E> {
         node.next = currentNode.next;
         currentNode.next = node;
     }
-    public void deleteFirst(){
+    public void firstElementDelete(){
         if (head == null){
             System.out.println("Linked list is Empty");
         }
         head = head.next;
     }
 
-    public void deleteLast(){
+    public void lastElementDelete() {
         if (head == null){
             System.out.println("Linked list is Empty");
         } else if (head == tail) {
@@ -76,5 +76,20 @@ public class LinkedListFunction<E> {
             currentNode = currentNode.next;
         }
         return null;
+    }
+    public void insertElementAfterAnyKey(E key, E insertElement) {
+        Node node = new Node<>(insertElement);
+        Node currentNode = search(key);
+        boolean condition = false;
+        if (currentNode != null){
+            node.next = currentNode.next;
+            currentNode.next = node;
+            condition = true;
+        }
+        if (condition==true){
+            System.out.println("Successfully added the element");
+        }else {
+            System.out.println("Element Absent in Linked list");
+        }
     }
 }
